@@ -1949,10 +1949,12 @@ class CfgVehicles
 		modelSides[]={0,1,2,3};
 		hiddenSelections[]=
 		{
-			"camo"
+			"camo",
+			"camo1"
 		};
 		hiddenSelectionsTextures[]=
 		{
+			"sim_extra_gear\tex\cargo_tshirt_blue.paa",
 			"sim_extra_gear\tex\cargo_tshirt_blue.paa"
 		};
 		headgearList[]={};
@@ -1998,6 +2000,7 @@ class CfgVehicles
 		uniformClass="sciv_cargotshirt2";
 		hiddenSelectionsTextures[]=
 		{
+			"sim_extra_gear\tex\cargo_tshirt_black.paa",
 			"sim_extra_gear\tex\cargo_tshirt_black.paa"
 		};
 	};
@@ -2008,6 +2011,7 @@ class CfgVehicles
 		uniformClass="sciv_cargotshirt3";
 		hiddenSelectionsTextures[]=
 		{
+			"sim_extra_gear\tex\cargo_tshirt_camo.paa",
 			"sim_extra_gear\tex\cargo_tshirt_camo.paa"
 		};
 	};
@@ -2018,6 +2022,7 @@ class CfgVehicles
 		uniformClass="sciv_cargotshirt4";
 		hiddenSelectionsTextures[]=
 		{
+			"sim_extra_gear\tex\cargo_tshirt_olive.paa",
 			"sim_extra_gear\tex\cargo_tshirt_olive.paa"
 		};
 	};
