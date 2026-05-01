@@ -5,6 +5,10 @@ class CfgPatches
 		units[]={};
 		weapons[]=
 		{
+			"U_FP_BDU_portg_lizard",
+			"U_FP_BDU_taki_lizard",
+			"U_FP_BDU_gray_lizard",
+			"U_FP_BDU_greek_lizard",
 			"U_FP_OG107_guer1_trop",
 			"U_FP_OG107_guer2_trop",
 			"U_FP_OG107_guer3_trop",
@@ -25,6 +29,60 @@ class CfgPatches
 };
 class CfgVehicles
 {
+	class simc_bdu_eto_blench;
+	class FP_BDU_portg_lizard: simc_bdu_eto_blench
+	{
+		displayName="BDU Portuguese Lizard";
+		uniformClass="U_FP_BDU_portg_lizard";
+		hiddenSelectionsTextures[]=
+		{
+			"\FP_UniformsSNS\data\bdu_port_lizard_co.paa",
+			"\FP_UniformsSNS\data\bdu_port_lizard_co.paa",
+			"",
+			"",
+			""
+		};
+	};
+	class FP_BDU_taki_lizard: simc_bdu_eto_blench
+	{
+		displayName="BDU Takistani Lizard";
+		uniformClass="U_FP_BDU_taki_lizard";
+		hiddenSelectionsTextures[]=
+		{
+			"\FP_UniformsSNS\data\bdu_takistani_lizard_co.paa",
+			"\FP_UniformsSNS\data\bdu_takistani_lizard_co.paa",
+			"",
+			"",
+			""
+		};
+	};
+	class FP_BDU_gray_lizard: simc_bdu_eto_blench
+	{
+		displayName="BDU Gray Lizard";
+		uniformClass="U_FP_BDU_gray_lizard";
+		hiddenSelectionsTextures[]=
+		{
+			"\FP_UniformsSNS\data\bdu_sadf_recce_co.paa",
+			"\FP_UniformsSNS\data\bdu_sadf_recce_co.paa",
+			"",
+			"",
+			""
+		};
+	};
+	class FP_BDU_greek_lizard: simc_bdu_eto_blench
+	{
+		displayName="BDU Greek Lizard";
+		uniformClass="U_FP_BDU_greek_lizard";
+		hiddenSelectionsTextures[]=
+		{
+			"\FP_UniformsSNS\data\bdu_greek_lizard_co.paa",
+			"\FP_UniformsSNS\data\bdu_greek_lizard_co.paa",
+			"",
+			"",
+			""
+		};
+	};
+
 	class simc_og107_mk3_tuck_blench;
 	class FP_og107_tan_tuck: simc_og107_mk3_tuck_blench
 	{
@@ -151,6 +209,45 @@ class CfgVehicles
 class cfgWeapons
 {
 	class UniformItem;
+
+	class U_Simc_bdu_eto;
+	class U_Simc_bdu_eto_blench: U_Simc_bdu_eto
+	{
+		class ItemInfo;
+	};
+	class U_FP_BDU_portg_lizard: U_Simc_bdu_eto_blench
+	{
+		displayName="BDU Portuguese Lizard";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="FP_BDU_portg_lizard";
+		};
+	};
+	class U_FP_BDU_taki_lizard: U_Simc_bdu_eto_blench
+	{
+		displayName="BDU Takistani Lizard";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="FP_BDU_taki_lizard";
+		};
+	};
+	class U_FP_BDU_gray_lizard: U_Simc_bdu_eto_blench
+	{
+		displayName="BDU Gray Lizard";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="FP_BDU_gray_lizard";
+		};
+	};
+	class U_FP_BDU_greek_lizard: U_Simc_bdu_eto_blench
+	{
+		displayName="BDU Greek Lizard";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="FP_BDU_greek_lizard";
+		};
+	};
+
 	class U_Simc_OG107_mk3_blench;
 	class U_Simc_OG107_mk3_tuck_blench: U_Simc_OG107_mk3_blench
 	{
