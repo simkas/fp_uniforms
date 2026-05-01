@@ -23,7 +23,8 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"simc_mc_67_core"
+			"simc_mc_67_core",
+			"simc_uaf_81_core"
 		};
 	};
 };
